@@ -1,11 +1,10 @@
 {
-    "name": "microbit-desafios",
-    "version": "0.0.1",
-    "description": "Desafios micro:bit do Buinho — cada desafio desbloqueia blocos novos",
+    "name": "faisca-companheiro",
+    "version": "0.1.0",
+    "description": "Faísca Desafios — programa companheiro do micro:bit V2 (Bluetooth)",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "bluetooth": "*"
     },
     "files": [
         "main.blocks",
@@ -13,5 +12,16 @@
         "README.md",
         "desafios.md"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
 }
